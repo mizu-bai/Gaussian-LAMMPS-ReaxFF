@@ -6,9 +6,9 @@ For some reason, I have to compare the ReaxFF and DFT results, so I have no choi
 
 ## Usage
 
-In `src`, there is an script for `CHON-2017_w` forcefield. If one wants to switch to other forcefields, modify all settings about atoms.
+In `src`, there is a script for `CHON-2017_w` forcefield. If one wants to switch to other forcefields, modify all settings about atoms.
 
-In `example`, folder `H2O` is an optimization task while `HCN` is an transition state search task.
+In `example`, folder `H2O` is an optimization task while `HCN` is a transition state search task.
 
 **NOTE**: `opt=nomicro` & `freq=num`
 
