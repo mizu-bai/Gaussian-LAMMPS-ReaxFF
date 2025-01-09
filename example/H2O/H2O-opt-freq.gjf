@@ -1,0 +1,18 @@
+%nproc=1
+%chk=H2O-opt-freq.chk
+#p external="python3 -u ../../src/reaxff_chon2017.py" opt=nomicro
+
+Title Card Required
+
+0 1
+ O       0.00000000      0.00000000     -0.13207200
+ H       0.00000000      0.75170600      0.45401500
+ H       0.00000000     -0.75170600      0.45401500
+
+
+--link1--
+%nproc=1
+%chk=H2O-opt-freq.chk
+#p external="python3 -u ../../src/reaxff_chon2017.py" freq=num geom=allcheck
+
+

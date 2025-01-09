@@ -1,0 +1,2589 @@
+ Entering Gaussian System, Link 0=g16
+ Initial command:
+ /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-1276267.inp" -scrdir="/home/jh-li/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=   1276276.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                 9-Jan-2025 
+ ******************************************
+ %nproc=1
+ Will use up to    1 processors via shared memory.
+ %chk=ts-opt-freq.chk
+ --------------------------------------------------------------
+ #p external="python3 -u ../../src/reaxff_chon2017.py" freq=num
+ --------------------------------------------------------------
+ 1/10=4,18=10,30=1,38=11/1,6,3;
+ 2/12=2,17=6,18=5,40=1/2;
+ 3/11=9,25=1,30=1,41=9900000,43=2,71=1/1;
+ 4/20=17,22=1,24=3,113=1,114=1/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 7/44=-1/16;
+ 1/10=4,18=10,30=1,38=10/6(3);
+ 7/8=1,25=1,44=-1/16;
+ 1/10=4,18=10,30=1,38=10/3;
+ 99//99;
+ 3/11=9,25=1,30=1,41=9900000,43=2,71=1/1;
+ 4/16=2,20=17,22=1,24=3,113=1,114=1/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 7/7=1,44=-1/16;
+ 1/10=4,18=10,30=1,38=10/6(-4);
+ 7/8=1,25=1,44=-1/16;
+ 1/10=4,18=10,30=1,38=10/3;
+ 99//99;
+ Leave Link    1 at Thu Jan  9 21:23:18 2025, MaxMem=           0 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l101.exe)
+ -------------------
+ Title Card Required
+ -------------------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 1
+ C                    -1.16733   0.06337   0.0024 
+ H                    -0.59796   1.36492   0.03541 
+ N                     0.00932   0.13459   0.0042 
+ 
+ ITRead=  0  0  0
+ MicOpt= -1 -1 -1
+ NAtoms=      3 NQM=        3 NQMF=       0 NMMI=      0 NMMIF=      0
+                NMic=       0 NMicF=      0.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1           2           3
+ IAtWgt=          12           1          14
+ AtmWgt=  12.0000000   1.0078250  14.0030740
+ NucSpn=           0           1           2
+ AtZEff=  -0.0000000  -0.0000000  -0.0000000
+ NQMom=    0.0000000   0.0000000   2.0440000
+ NMagM=    0.0000000   2.7928460   0.4037610
+ AtZNuc=   6.0000000   1.0000000   7.0000000
+ Leave Link  101 at Thu Jan  9 21:23:18 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l106.exe)
+ Numerical evaluation of force-constants.
+ Nuclear step= 0.001000 Angstroms, electric field step= 0.000333 atomic units, NStep=1.
+ Leave Link  106 at Thu Jan  9 21:23:18 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Initialization pass.
+ Trust Radius=3.00D-01 FncErr=1.00D-07 GrdErr=1.00D-07 EigMax=2.50D+02 EigMin=1.00D-04
+ Number of steps in this run=      2 maximum allowed number of steps=      2.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Leave Link  103 at Thu Jan  9 21:23:18 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          6           0       -1.167328    0.063372    0.002395
+      2          1           0       -0.597963    1.364915    0.035408
+      3          7           0        0.009318    0.134586    0.004201
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3
+     1  C    0.000000
+     2  H    1.421014   0.000000
+     3  N    1.178800   1.372397   0.000000
+ Stoichiometry    CHN
+ Framework group  CS[SG(CHN)]
+ Deg. of freedom     3
+ Full point group                 CS      NOp   2
+ Largest Abelian subgroup         CS      NOp   2
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          6           0        0.090370    0.635615   -0.000000
+      2          1           0       -1.174805   -0.011389    0.000000
+      3          7           0        0.090370   -0.543186   -0.000000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):         325.4273686          56.2792406          47.9813677
+ Leave Link  202 at Thu Jan  9 21:23:18 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+ There are     9 symmetry adapted cartesian basis functions of A'  symmetry.
+ There are     2 symmetry adapted cartesian basis functions of A"  symmetry.
+ There are     9 symmetry adapted basis functions of A'  symmetry.
+ There are     2 symmetry adapted basis functions of A"  symmetry.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877550712 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+ Leave Link  301 at Thu Jan  9 21:23:18 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477654503760     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654504     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:19 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.4
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:19 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000039598   -0.000016812   -0.000000426
+      2        1           0.000069844   -0.000104283   -0.000002645
+      3        7          -0.000109442    0.000121095    0.000003072
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000121095 RMS     0.000070128
+ Z-matrix is all fixed cartesians, so copy forces.
+ Leave Link  716 at Thu Jan  9 21:23:19 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ At 1st pt F.D. properties file   721 does not exist.
+ At 1st pt F.D. properties file   722 does not exist.
+ D2Numr ... symmetry will be used.
+ Leave Link  106 at Thu Jan  9 21:23:19 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7863491144 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:19 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477654551568     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654552     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:21 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:21 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000009679    0.000366702   -0.000000000
+      2        1           0.000501299   -0.000219441   -0.000000000
+      3        7          -0.000510979   -0.000147259   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000510979 RMS     0.000282214
+ Leave Link  716 at Thu Jan  9 21:23:21 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=1 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:21 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7891489845 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:21 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477654455952     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654456     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:22 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:22 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000027075   -0.000445861   -0.000000000
+      2        1          -0.000280527    0.000093041   -0.000000000
+      3        7           0.000253452    0.000352820   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000445861 RMS     0.000229878
+ Leave Link  716 at Thu Jan  9 21:23:22 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=1 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:22 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7710580301 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:22 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477648113414     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477648113     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:24 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:24 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000410095   -0.006676519   -0.000000000
+      2        1           0.000521598   -0.000601667   -0.000000000
+      3        7          -0.000931693    0.007278187   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.007278187 RMS     0.003320278
+ Leave Link  716 at Thu Jan  9 21:23:24 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=2 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:24 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.8044788309 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:24 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477648240902     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477648241     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:25 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:25 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000403066    0.006726071   -0.000000000
+      2        1          -0.000313891    0.000507170   -0.000000000
+      3        7           0.000716957   -0.007233239   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.007233239 RMS     0.003309784
+ Leave Link  716 at Thu Jan  9 21:23:25 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=2 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:25 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877477338 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:25 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477654503760     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654504     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:27 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:27 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000019350   -0.000041279   -0.000000028
+      2        1           0.000108594   -0.000063675   -0.000000015
+      3        7          -0.000127944    0.000104954    0.000000043
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000127944 RMS     0.000070954
+ Leave Link  716 at Thu Jan  9 21:23:27 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=3 step-up   number 1
+ Skip step-back as it is equivalent to step-up.
+ Finish atom      1 at Thu Jan  9 21:23:27 2025
+ Leave Link  106 at Thu Jan  9 21:23:27 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7909699316 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:27 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477653483854     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477653484     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.4
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000406428    0.000377906   -0.000000000
+      2        1          -0.001208919    0.000129570   -0.000000000
+      3        7           0.000802487   -0.000507477   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.001208919 RMS     0.000546482
+ Leave Link  716 at Thu Jan  9 21:23:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=1 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:28 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7845439562 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477653021710     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477653022     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:30 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:30 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000375342   -0.000457370   -0.000000000
+      2        1           0.001432814   -0.000252343   -0.000000000
+      3        7          -0.001057471    0.000709712   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.001432814 RMS     0.000674013
+ Leave Link  716 at Thu Jan  9 21:23:30 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=1 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:30 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877083001 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:30 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477654424080     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654424     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:31 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:31 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000137518   -0.000589753   -0.000000000
+      2        1           0.000299261    0.000002103   -0.000000000
+      3        7          -0.000161743    0.000587650   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000589753 RMS     0.000303274
+ Leave Link  716 at Thu Jan  9 21:23:31 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=2 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:31 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7878006364 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:31 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477654710928     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654711     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000174961    0.000518503   -0.000000000
+      2        1          -0.000082674   -0.000128331   -0.000000000
+      3        7          -0.000092287   -0.000390171   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000518503 RMS     0.000231783
+ Leave Link  716 at Thu Jan  9 21:23:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=2 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877538014 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477654503760     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654504     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.6
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000019025   -0.000038675   -0.000000015
+      2        1           0.000108869   -0.000063487   -0.000000086
+      3        7          -0.000127894    0.000102162    0.000000101
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000127894 RMS     0.000070344
+ Leave Link  716 at Thu Jan  9 21:23:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=3 step-up   number 1
+ Skip step-back as it is equivalent to step-up.
+ Finish atom      2 at Thu Jan  9 21:23:34 2025
+ Leave Link  106 at Thu Jan  9 21:23:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7859363446 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:34 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477653706959     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477653707     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000363386   -0.000860881   -0.000000000
+      2        1           0.001036726   -0.000096438   -0.000000000
+      3        7          -0.000673342    0.000957321   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.001036726 RMS     0.000608013
+ Leave Link  716 at Thu Jan  9 21:23:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=1 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:35 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7895624500 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:35 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477654264720     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654265     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000401025    0.000786996   -0.000000000
+      2        1          -0.000823301   -0.000026984   -0.000000000
+      3        7           0.000422277   -0.000760012   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000823301 RMS     0.000496059
+ Leave Link  716 at Thu Jan  9 21:23:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=1 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:37 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.8045248145 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477647364420     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477647364     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000252419    0.007316523   -0.000000000
+      2        1          -0.000508328    0.000448253   -0.000000000
+      3        7           0.000760747   -0.007764770   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.007764770 RMS     0.003573435
+ Leave Link  716 at Thu Jan  9 21:23:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=2 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7710116773 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477647013828     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477647014     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:39 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:40 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000248691   -0.007196539   -0.000000000
+      2        1           0.000709292   -0.000530610   -0.000000000
+      3        7          -0.000957987    0.007727142   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.007727142 RMS     0.003547505
+ Leave Link  716 at Thu Jan  9 21:23:40 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=2 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:40 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877475705 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:40 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276276.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276276.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276276.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276276.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276276.EUF"
+ Recovered energy=-0.477654503760     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654504     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000019202   -0.000041765    0.000000044
+      2        1           0.000108807   -0.000063627    0.000000101
+      3        7          -0.000128009    0.000105392   -0.000000145
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000128009 RMS     0.000071098
+ Leave Link  716 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=3 step-up   number 1
+ Skip step-back as it is equivalent to step-up.
+ Finish atom      3 at Thu Jan  9 21:23:41 2025
+ Maximum difference in off-diagonal FC elements:
+ I=  8 J=  2 Difference=    4.3286659552D-04
+ Max difference between analytic and numerical forces:
+ I=  7 Difference=    2.0051085665D-05
+ FinFTb:  IFil= 1 IFilD=  777 LTop=  1 LFil=         4 LTop1=  0 IMask=  1
+ Leave Link  106 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ Full mass-weighted force constant matrix:
+ Low frequencies ----1404.2040   -1.7808   -0.0399    1.6193    7.2340   16.8912
+ Low frequencies ---   36.3195 3753.7071 4626.4485
+ ******    1 imaginary frequencies (negative Signs) ****** 
+ Diagonal vibrational polarizability:
+        0.0000000       0.0000000       0.0000000
+ Harmonic frequencies (cm**-1), IR intensities (KM/Mole), Raman scattering
+ activities (A**4/AMU), depolarization ratios for plane and unpolarized
+ incident light, reduced masses (AMU), force constants (mDyne/A),
+ and normal coordinates:
+                      1                      2                      3
+                     A'                     A'                     A'
+ Frequencies --  -1404.2039              3753.7071              4626.4485
+ Red. masses --      1.2314                 3.0614                 1.3784
+ Frc consts  --      1.4306                25.4150                17.3830
+ IR Inten    --      0.0000                 0.0000                 0.0000
+  Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
+     1   6    -0.09  -0.08   0.00    -0.04   0.31   0.00    -0.02  -0.12   0.00
+     2   1     0.13   0.98  -0.00     0.90   0.12  -0.00     0.97  -0.19  -0.00
+     3   7     0.07  -0.01  -0.00    -0.03  -0.27   0.00    -0.05   0.12   0.00
+
+ -------------------
+ - Thermochemistry -
+ -------------------
+ Temperature   298.150 Kelvin.  Pressure   1.00000 Atm.
+ Atom     1 has atomic number  6 and mass  12.00000
+ Atom     2 has atomic number  1 and mass   1.00783
+ Atom     3 has atomic number  7 and mass  14.00307
+ Molecular mass:    27.01090 amu.
+ Principal axes and moments of inertia in atomic units:
+                           1         2         3
+     Eigenvalues --     5.54576  32.06762  37.61338
+           X            0.00202   1.00000   0.00000
+           Y            1.00000  -0.00202   0.00000
+           Z           -0.00000   0.00000   1.00000
+ This molecule is an asymmetric top.
+ Rotational symmetry number  1.
+ Rotational temperatures (Kelvin)     15.61805     2.70098     2.30274
+ Rotational constants (GHZ):         325.42737    56.27924    47.98137
+    1 imaginary frequencies ignored.
+ Zero-point vibrational energy      50124.5 (Joules/Mol)
+                                   11.98003 (Kcal/Mol)
+ Vibrational temperatures:   5400.75  6656.43
+          (Kelvin)
+ 
+ Zero-point correction=                           0.019091 (Hartree/Particle)
+ Thermal correction to Energy=                    0.021924
+ Thermal correction to Enthalpy=                  0.022868
+ Thermal correction to Gibbs Free Energy=        -0.002015
+ Sum of electronic and zero-point Energies=             -0.458563
+ Sum of electronic and thermal Energies=                -0.455731
+ Sum of electronic and thermal Enthalpies=              -0.454786
+ Sum of electronic and thermal Free Energies=           -0.479670
+ 
+                     E (Thermal)             CV                S
+                      KCal/Mol        Cal/Mol-Kelvin    Cal/Mol-Kelvin
+ Total                   13.757              5.962             52.371
+ Electronic               0.000              0.000              0.000
+ Translational            0.889              2.981             35.816
+ Rotational               0.889              2.981             16.555
+ Vibrational             11.980              0.000              0.000
+                       Q            Log10(Q)             Ln(Q)
+ Total Bot       0.845019D+01          0.926867          2.134189
+ Total V=0       0.510850D+10          9.708293         22.354171
+ Vib (Bot)       0.165415D-08         -8.781426        -20.219981
+ Vib (V=0)       0.100000D+01          0.000000          0.000000
+ Electronic      0.100000D+01          0.000000          0.000000
+ Translational   0.551776D+07          6.741762         15.523482
+ Rotational      0.925828D+03          2.966531          6.830689
+ 
+                                                         Title Card Required
+                                                             IR Spectrum
+ 
+     4                       3                                                                                                       
+     6                       7                                                                                                       
+     2                       5                                                                                                       
+     6                       4                                                                                                       
+ 
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+ 
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000039598   -0.000016812   -0.000000426
+      2        1           0.000069844   -0.000104283   -0.000002645
+      3        7          -0.000109442    0.000121095    0.000003072
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000121095 RMS     0.000070128
+ Z-matrix is all fixed cartesians, so copy forces.
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.355919D+01
+      2  0.128737D-03 -0.840512D-02
+      3  0.230778D-05 -0.213570D-03  0.946228D-05
+      4  0.299828D+00  0.113318D+00  0.287419D-02 -0.196414D-01
+      5 -0.190296D+00 -0.213237D+00 -0.540882D-02 -0.144513D+00  0.683663D+00
+      6 -0.482686D-02 -0.540890D-02 -0.129168D-03 -0.366551D-02  0.173397D-01
+      7 -0.385931D+01 -0.113409D+00 -0.287553D-02 -0.280249D+00  0.334832D+00
+      8  0.190154D+00  0.221649D+00  0.562259D-02  0.311949D-01 -0.470440D+00
+      9  0.482422D-02  0.562267D-02  0.119551D-03  0.791322D-03 -0.119313D-01
+                6             7             8             9 
+      6  0.485353D-03
+      7  0.849295D-02  0.413991D+01
+      8 -0.119312D-01 -0.221411D+00  0.248798D+00
+      9 -0.356150D-03 -0.561713D-02  0.630879D-02  0.236721D-03
+ Leave Link  716 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Search for a local minimum.
+ Step number   1 out of a maximum of    2
+ All quantities printed in internal units (Hartrees-Bohrs-Radians)
+ Second derivative matrix not updated -- analytic derivatives used.
+ The second derivative matrix:
+                          X1        Y1        Z1        X2        Y2
+           X1           3.55919
+           Y1           0.00013  -0.00841
+           Z1           0.00000  -0.00021   0.00001
+           X2           0.29983   0.11332   0.00287  -0.01964
+           Y2          -0.19030  -0.21324  -0.00541  -0.14451   0.68366
+           Z2          -0.00483  -0.00541  -0.00013  -0.00367   0.01734
+           X3          -3.85931  -0.11341  -0.00288  -0.28025   0.33483
+           Y3           0.19015   0.22165   0.00562   0.03119  -0.47044
+           Z3           0.00482   0.00562   0.00012   0.00079  -0.01193
+                          Z2        X3        Y3        Z3
+           Z2           0.00049
+           X3           0.00849   4.13991
+           Y3          -0.01193  -0.22141   0.24880
+           Z3          -0.00036  -0.00562   0.00631   0.00024
+ ITU=  0
+     Eigenvalues ---   -0.18982   0.93165   7.73639
+ Eigenvalue     1 is  -1.90D-01 should be greater than     0.000000 Eigenvector:
+                          X2        Y1        Y3        Y2        X1
+   1                    0.81051  -0.40098   0.29370   0.20513  -0.19447
+                          X3        Z1        Z3        Z2
+   1                   -0.12630  -0.01017   0.00745   0.00520
+ Angle between quadratic step and forces=  53.64 degrees.
+ ClnCor:  largest displacement from symmetrization is 1.66D-19 for atom     2.
+ Linear search not attempted -- first point.
+ ClnCor:  largest displacement from symmetrization is 1.33D-15 for atom     2.
+ B after Tr=    -0.000019    0.000079    0.000002
+         Rot=    1.000000   -0.000000    0.000001   -0.000030 Ang=   0.00 deg.
+ Variable       Old X    -DE/DX   Delta X   Delta X   Delta X     New X
+                                 (Linear)    (Quad)   (Total)
+    X1       -2.20593   0.00004   0.00000  -0.00009  -0.00011  -2.20604
+    Y1        0.11976  -0.00002   0.00000  -0.00016  -0.00021   0.11954
+    Z1        0.00453  -0.00000   0.00000  -0.00000  -0.00001   0.00452
+    X2       -1.12999   0.00007   0.00000   0.00038   0.00021  -1.12977
+    Y2        2.57932  -0.00010   0.00000  -0.00005  -0.00003   2.57928
+    Z2        0.06691  -0.00000   0.00000  -0.00000  -0.00000   0.06691
+    X3        0.01761  -0.00011   0.00000  -0.00006  -0.00010   0.01751
+    Y3        0.25433   0.00012   0.00000   0.00017   0.00025   0.25458
+    Z3        0.00794   0.00000   0.00000   0.00000   0.00001   0.00794
+         Item               Value     Threshold  Converged?
+ Maximum Force            0.000121     0.000450     YES
+ RMS     Force            0.000070     0.000300     YES
+ Maximum Displacement     0.000245     0.001800     YES
+ RMS     Displacement     0.000139     0.001200     YES
+ Predicted change in Energy=-6.579511D-08
+ Optimization completed.
+    -- Stationary point found.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Leave Link  103 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l9999.exe)
+ 1\1\GINC-DESKTOP-1D9QDE1\Freq\RExternal='python3 -u ../../src/reaxff_c
+ hon2017.py'\ZDO\C1H1N1\JH-LI\09-Jan-2025\0\\#p external="python3 -u ..
+ /../src/reaxff_chon2017.py" freq=num\\Title Card Required\\0,1\C,-1.16
+ 7328,0.063372,0.002395\H,-0.597963,1.364915,0.035408\N,0.009318,0.1345
+ 86,0.004201\\Version=ES64L-G16RevA.03\HF=-0.4776545\RMSD=0.000e+00\RMS
+ F=7.013e-05\ZeroPoint=0.0190914\Thermal=0.021924\Dipole=0.,0.,0.\Dipol
+ eDeriv=0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.\PG=CS [SG(C1H1N1)]\NImag=1\\3.55918585,0.00012874,-0
+ .00840512,0.00000231,-0.00021357,0.00000946,0.29982781,0.11331816,0.00
+ 287419,-0.01964141,-0.19029566,-0.21323667,-0.00540882,-0.14451287,0.6
+ 8366270,-0.00482686,-0.00540890,-0.00012917,-0.00366551,0.01733973,0.0
+ 0048535,-3.85930937,-0.11340866,-0.00287553,-0.28024872,0.33483158,0.0
+ 0849295,4.13991328,0.19015386,0.22164940,0.00562259,0.03119487,-0.4704
+ 3951,-0.01193117,-0.22141121,0.24879837,0.00482422,0.00562267,0.000119
+ 55,0.00079132,-0.01193126,-0.00035615,-0.00561713,0.00630879,0.0002367
+ 2\\-0.00003960,0.00001681,0.00000043,-0.00006984,0.00010428,0.00000265
+ ,0.00010944,-0.00012109,-0.00000307\\\@
+
+
+ SILVERMAN'S PARADOX - IF MURPHY'S LAW CAN GO WRONG, IT WILL.
+ Job cpu time:       0 days  0 hours  0 minutes  3.3 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes 23.3 seconds.
+ File lengths (MBytes):  RWF=     43 Int=      0 D2E=      0 Chk=     38 Scr=      1
+ Normal termination of Gaussian 16 at Thu Jan  9 21:23:41 2025.
+ Initial command:
+ /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-1276267.inp" -scrdir="/home/jh-li/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=   1276559.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                 9-Jan-2025 
+ ******************************************
+ %nproc=1
+ Will use up to    1 processors via shared memory.
+ %chk=ts-opt-freq.chk
+ ----------------------------------------------------------------------
+ #p external="python3 -u ../../src/reaxff_chon2017.py" opt=(ts,rcfc,noe
+ igen,nomicro) geom=allcheck
+ ----------------------------------------------------------------------
+ 1/5=1,10=5,11=1,18=20,26=1,29=7,38=1/1,3;
+ 2/9=110,12=2,40=1/2;
+ 3/11=9,14=-4,25=1,30=1,41=9900000,43=2,71=1/1;
+ 4/20=17,22=1,24=3,113=1,114=1/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 7/44=-1/16;
+ 1/5=1,11=1,18=20,26=1/3(2);
+ 2/9=110/2;
+ 99//99;
+ 2/9=110/2;
+ 3/11=9,14=-2,25=1,30=1,41=9900000,43=2,71=1/1;
+ 4/16=2,20=17,22=1,24=3,113=1,114=1/2;
+ 7/44=-1/16;
+ 1/5=1,11=1,18=20,26=1/3(-4);
+ 2/9=110/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 99//99;
+ Leave Link    1 at Thu Jan  9 21:23:41 2025, MaxMem=           0 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l101.exe)
+ Structure from the checkpoint file:  "ts-opt-freq.chk"
+ -------------------
+ Title Card Required
+ -------------------
+ Charge =  0 Multiplicity = 1
+ No Z-Matrix found in chk file; cartesian coordinates used.
+  C                                                -1.167328000000      0.063372000000      0.002395000000
+  H                                                -0.597963000000      1.364915000000      0.035408000000
+  N                                                 0.009318000000      0.134586000000      0.004201000000
+ Recover connectivity data from disk.
+ Add virtual bond connecting atoms C1         and H2         Dist= 2.69D+00.
+ Add virtual bond connecting atoms N3         and H2         Dist= 2.59D+00.
+ ITRead=  0  0  0
+ MicOpt= -1 -1 -1
+ NAtoms=      3 NQM=        3 NQMF=       0 NMMI=      0 NMMIF=      0
+                NMic=       0 NMicF=      0.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1           2           3
+ IAtWgt=          12           1          14
+ AtmWgt=  12.0000000   1.0078250  14.0030740
+ NucSpn=           0           1           2
+ AtZEff=   3.6000000   1.0000000   4.5500000
+ NQMom=    0.0000000   0.0000000   2.0440000
+ NMagM=    0.0000000   2.7928460   0.4037610
+ AtZNuc=   6.0000000   1.0000000   7.0000000
+ Leave Link  101 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Initialization pass.
+ Cartesian force constants read from checkpoint file:
+ "ts-opt-freq.chk"
+ FormGI is forming the generalized inverse of G from B-inverse, IUseBI=4.
+                           ----------------------------
+                           !    Initial Parameters    !
+                           ! (Angstroms and Degrees)  !
+ --------------------------                            --------------------------
+ ! Name  Definition              Value          Derivative Info.                !
+ --------------------------------------------------------------------------------
+ ! R1    R(1,2)                  1.421          D2E/DX2 =    0.0058             !
+ ! R2    R(1,3)                  1.1788         D2E/DX2 =    3.7677             !
+ ! R3    R(2,3)                  1.3724         D2E/DX2 =    0.3411             !
+ --------------------------------------------------------------------------------
+ Trust Radius=3.00D-01 FncErr=1.00D-07 GrdErr=1.00D-07 EigMax=2.50D+02 EigMin=1.00D-04
+ Number of steps in this run=     20 maximum allowed number of steps=    100.
+ Search for a saddle point of order  1.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Leave Link  103 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          6           0       -1.167328    0.063372    0.002395
+      2          1           0       -0.597963    1.364915    0.035408
+      3          7           0        0.009318    0.134586    0.004201
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3
+     1  C    0.000000
+     2  H    1.421014   0.000000
+     3  N    1.178800   1.372397   0.000000
+ Stoichiometry    CHN
+ Framework group  CS[SG(CHN)]
+ Deg. of freedom     3
+ Full point group                 CS      NOp   2
+ RotChk:  IX=0 Diff= 3.38D-16
+ Largest Abelian subgroup         CS      NOp   2
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          6           0        0.090370    0.635615   -0.000000
+      2          1           0       -1.174805   -0.011389    0.000000
+      3          7           0        0.090370   -0.543186   -0.000000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):         325.4273686          56.2792406          47.9813677
+ Leave Link  202 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+ There are     9 symmetry adapted cartesian basis functions of A'  symmetry.
+ There are     2 symmetry adapted cartesian basis functions of A"  symmetry.
+ There are     9 symmetry adapted basis functions of A'  symmetry.
+ There are     2 symmetry adapted basis functions of A"  symmetry.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877550712 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+ Leave Link  301 at Thu Jan  9 21:23:41 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276559.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276559.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276559.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276559.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276559.EUF"
+ Recovered energy=-0.477654503760     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654504     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000039598   -0.000016812   -0.000000426
+      2        1           0.000069844   -0.000104283   -0.000002645
+      3        7          -0.000109442    0.000121095    0.000003072
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000121095 RMS     0.000070128
+ Leave Link  716 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ FormGI is forming the generalized inverse of G from B-inverse, IUseBI=4.
+ Internal  Forces:  Max     0.000138334 RMS     0.000085508
+ Search for a saddle point.
+ Step number   1 out of a maximum of   20
+ All quantities printed in internal units (Hartrees-Bohrs-Radians)
+ Swapping is turned off.
+ Second derivative matrix not updated -- first step.
+ The second derivative matrix:
+                          R1        R2        R3
+           R1           0.00580
+           R2          -0.24429   3.76768
+           R3           0.24642   0.36096   0.34109
+ ITU=  0
+     Eigenvalues ---   -0.16290   0.45971   3.81776
+ Eigenvectors required to have negative eigenvalues:
+                          R1        R3        R2
+   1                    0.86414  -0.49342   0.09902
+ RFO step:  Lambda0=4.136530435D-08 Lambda=-2.54773634D-08.
+ Linear search not attempted -- option 19 set.
+ Iteration  1 RMS(Cart)=  0.00024515 RMS(Int)=  0.00000002
+ Iteration  2 RMS(Cart)=  0.00000002 RMS(Int)=  0.00000000
+ ITry= 1 IFail=0 DXMaxC= 2.91D-04 DCOld= 1.00D+10 DXMaxT= 3.00D-01 DXLimC= 3.00D+00 Rises=F
+ ClnCor:  largest displacement from symmetrization is 4.98D-16 for atom     2.
+ Variable       Old X    -DE/DX   Delta X   Delta X   Delta X     New X
+                                 (Linear)    (Quad)   (Total)
+    R1        2.68533   0.00002   0.00000  -0.00055  -0.00055   2.68478
+    R2        2.22761  -0.00005   0.00000  -0.00005  -0.00005   2.22756
+    R3        2.59345  -0.00014   0.00000   0.00005   0.00005   2.59350
+         Item               Value     Threshold  Converged?
+ Maximum Force            0.000138     0.000450     YES
+ RMS     Force            0.000086     0.000300     YES
+ Maximum Displacement     0.000291     0.001800     YES
+ RMS     Displacement     0.000245     0.001200     YES
+ Predicted change in Energy= 7.943976D-09
+ Optimization completed.
+    -- Stationary point found.
+                           ----------------------------
+                           !   Optimized Parameters   !
+                           ! (Angstroms and Degrees)  !
+ --------------------------                            --------------------------
+ ! Name  Definition              Value          Derivative Info.                !
+ --------------------------------------------------------------------------------
+ ! R1    R(1,2)                  1.421          -DE/DX =    0.0                 !
+ ! R2    R(1,3)                  1.1788         -DE/DX =    0.0                 !
+ ! R3    R(2,3)                  1.3724         -DE/DX =   -0.0001              !
+ --------------------------------------------------------------------------------
+ Largest change from initial coordinates is atom    2       0.000 Angstoms.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Leave Link  103 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          6           0       -1.167328    0.063372    0.002395
+      2          1           0       -0.597963    1.364915    0.035408
+      3          7           0        0.009318    0.134586    0.004201
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3
+     1  C    0.000000
+     2  H    1.421014   0.000000
+     3  N    1.178800   1.372397   0.000000
+ Stoichiometry    CHN
+ Framework group  CS[SG(CHN)]
+ Deg. of freedom     3
+ Full point group                 CS      NOp   2
+ RotChk:  IX=0 Diff= 3.11D-16
+ Largest Abelian subgroup         CS      NOp   2
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          6           0        0.090370    0.635615    0.000000
+      2          1           0       -1.174805   -0.011389   -0.000000
+      3          7           0        0.090370   -0.543186    0.000000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):         325.4273686          56.2792406          47.9813677
+ Leave Link  202 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l9999.exe)
+ 1\1\GINC-DESKTOP-1D9QDE1\FTS\RExternal='python3 -u ../../src/reaxff_ch
+ on2017.py'\ZDO\C1H1N1\JH-LI\09-Jan-2025\0\\#p external="python3 -u ../
+ ../src/reaxff_chon2017.py" opt=(ts,rcfc,noeigen,nomicro) geom=allcheck
+ \\Title Card Required\\0,1\C,-1.167328,0.063372,0.002395\H,-0.597963,1
+ .364915,0.035408\N,0.009318,0.134586,0.004201\\Version=ES64L-G16RevA.0
+ 3\HF=-0.4776545\RMSD=0.000e+00\RMSF=7.013e-05\Dipole=0.,0.,0.\PG=CS [S
+ G(C1H1N1)]\\@
+
+
+ A ROPE OVER THE TOP OF A FENCE HAS THE SAME LENGTH ON EACH SIDE.
+ WEIGHS 1/3 POUND PER FOOT.  ON ONE END HANGS A MONKEY HOLDING A
+ BANANA, AND ON THE OTHER END A WEIGHT EQUAL TO THE WEIGHT
+ OF THE MONKEY.  THE BANANA WEIGHS TWO OUNCES PER INCH.
+ THE ROPE IS AS LONG AS THE AGE OF THE MONKEY, 
+ AND THE WEIGHT OF THE MONKEY (IN OUNCES) IS AS MUCH
+ AS THE AGE OF THE MONKEY'S MOTHER.  THE COMBINED AGES OF MONKEY
+ AND MOTHER ARE THIRTY YEARS.  HALF THE WEIGHT OF THE MONKEY,
+  PLUS THE WEIGHT OF THE BANANA, IS ONE FOURTH AS MUCH AS THE WEIGHT
+ OF THE WEIGHT AND THE ROPE.
+ THE MONKEY'S MOTHER IS HALF AS OLD AS THE MONKEY WILL BE
+ WHEN IT IS 3 TIMES AS OLD AS ITS MOTHER WAS WHEN
+ SHE WAS HALF AS OLD AS THE MONKEY WILL BE WHEN IT IS
+ AS OLD AS ITS MOTHER WILL BE WHEN SHE IS 4 TIMES AS
+ OLD AS THE MONKEY WAS WHEN IT WAS TWICE AS OLD AS 
+ ITS MOTHER WAS WHEN SHE WAS ONE THIRD AS OLD AS THE
+ MONKEY WAS WHEN IT WAS AS OLD AS ITS MOTHER WAS WHEN 
+ SHE WAS 3 TIMES AS OLD AS THE MONKEY WAS WHEN IT WAS AS OLD AS ITS
+ MOTHER WAS WHEN SHE WAS 3 TIMES AS OLD AS THE MONKEY 
+ WAS WHEN IT WAS ONE FOURTH WAS OLD AS IT IS NOW.
+
+ HOW LONG IS THE BANANA?
+ Job cpu time:       0 days  0 hours  0 minutes  0.3 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  1.7 seconds.
+ File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=     38 Scr=      1
+ Normal termination of Gaussian 16 at Thu Jan  9 21:23:43 2025.
+ Initial command:
+ /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-1276267.inp" -scrdir="/home/jh-li/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=   1276566.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                 9-Jan-2025 
+ ******************************************
+ %nproc=1
+ Will use up to    1 processors via shared memory.
+ %chk=ts-opt-freq.chk
+ ----------------------------------------------------------------------
+ #p external="python3 -u ../../src/reaxff_chon2017.py" freq=num geom=al
+ lcheck
+ ----------------------------------------------------------------------
+ 1/10=4,18=10,29=7,30=1,38=11/1,6,3;
+ 2/12=2,40=1/2;
+ 3/11=9,14=-4,25=1,30=1,41=9900000,43=2,71=1/1;
+ 4/20=17,22=1,24=3,113=1,114=1/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 7/44=-1/16;
+ 1/10=4,18=10,30=1,38=10/6(3);
+ 7/8=1,25=1,44=-1/16;
+ 1/10=4,18=10,30=1,38=10/3;
+ 99//99;
+ 3/11=9,14=-2,25=1,30=1,41=9900000,43=2,71=1/1;
+ 4/16=2,20=17,22=1,24=3,113=1,114=1/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 7/7=1,44=-1/16;
+ 1/10=4,18=10,30=1,38=10/6(-4);
+ 7/8=1,25=1,44=-1/16;
+ 1/10=4,18=10,30=1,38=10/3;
+ 99//99;
+ Leave Link    1 at Thu Jan  9 21:23:43 2025, MaxMem=           0 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l101.exe)
+ Structure from the checkpoint file:  "ts-opt-freq.chk"
+ -------------------
+ Title Card Required
+ -------------------
+ Charge =  0 Multiplicity = 1
+ Redundant internal coordinates found in file.  (old form).
+ C,0,-1.167328,0.063372,0.002395
+ H,0,-0.597963,1.364915,0.035408
+ N,0,0.009318,0.134586,0.004201
+ Recover connectivity data from disk.
+ ITRead=  0  0  0
+ MicOpt= -1 -1 -1
+ NAtoms=      3 NQM=        3 NQMF=       0 NMMI=      0 NMMIF=      0
+                NMic=       0 NMicF=      0.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1           2           3
+ IAtWgt=          12           1          14
+ AtmWgt=  12.0000000   1.0078250  14.0030740
+ NucSpn=           0           1           2
+ AtZEff=   3.6000000   1.0000000   4.5500000
+ NQMom=    0.0000000   0.0000000   2.0440000
+ NMagM=    0.0000000   2.7928460   0.4037610
+ AtZNuc=   6.0000000   1.0000000   7.0000000
+ Leave Link  101 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.2 elap:               0.2
+ (Enter /opt/g16/l106.exe)
+ Numerical evaluation of force-constants.
+ Nuclear step= 0.001000 Angstroms, electric field step= 0.000333 atomic units, NStep=1.
+ Leave Link  106 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Initialization pass.
+ Trust Radius=3.00D-01 FncErr=1.00D-07 GrdErr=1.00D-07 EigMax=2.50D+02 EigMin=1.00D-04
+ Number of steps in this run=      2 maximum allowed number of steps=      2.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Leave Link  103 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          6           0       -1.167328    0.063372    0.002395
+      2          1           0       -0.597963    1.364915    0.035408
+      3          7           0        0.009318    0.134586    0.004201
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3
+     1  C    0.000000
+     2  H    1.421014   0.000000
+     3  N    1.178800   1.372397   0.000000
+ Stoichiometry    CHN
+ Framework group  CS[SG(CHN)]
+ Deg. of freedom     3
+ Full point group                 CS      NOp   2
+ RotChk:  IX=0 Diff= 4.14D-16
+ Largest Abelian subgroup         CS      NOp   2
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          6           0        0.090370    0.635615   -0.000000
+      2          1           0       -1.174805   -0.011389    0.000000
+      3          7           0        0.090370   -0.543186   -0.000000
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):         325.4273686          56.2792406          47.9813677
+ Leave Link  202 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+ There are     9 symmetry adapted cartesian basis functions of A'  symmetry.
+ There are     2 symmetry adapted cartesian basis functions of A"  symmetry.
+ There are     9 symmetry adapted basis functions of A'  symmetry.
+ There are     2 symmetry adapted basis functions of A"  symmetry.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877550712 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+ Leave Link  301 at Thu Jan  9 21:23:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477654503760     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654504     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.4
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000039598   -0.000016812   -0.000000426
+      2        1           0.000069844   -0.000104283   -0.000002645
+      3        7          -0.000109442    0.000121095    0.000003072
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000121095 RMS     0.000070128
+ Leave Link  716 at Thu Jan  9 21:23:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ At 1st pt F.D. properties file   721 does not exist.
+ At 1st pt F.D. properties file   722 does not exist.
+ D2Numr ... symmetry will be used.
+ Leave Link  106 at Thu Jan  9 21:23:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7863491144 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477654551568     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654552     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:46 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.4
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:46 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000009679    0.000366702   -0.000000000
+      2        1           0.000501299   -0.000219441   -0.000000000
+      3        7          -0.000510979   -0.000147259   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000510979 RMS     0.000282214
+ Leave Link  716 at Thu Jan  9 21:23:46 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=1 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:46 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7891489845 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:46 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477654455952     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654456     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:48 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:48 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000027075   -0.000445861   -0.000000000
+      2        1          -0.000280527    0.000093041   -0.000000000
+      3        7           0.000253452    0.000352820   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000445861 RMS     0.000229878
+ Leave Link  716 at Thu Jan  9 21:23:48 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=1 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:48 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7710580301 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:48 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477648113414     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477648113     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:49 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:49 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000410095   -0.006676519   -0.000000000
+      2        1           0.000521598   -0.000601667   -0.000000000
+      3        7          -0.000931693    0.007278187   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.007278187 RMS     0.003320278
+ Leave Link  716 at Thu Jan  9 21:23:49 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=2 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:49 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.8044788309 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:49 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477648240902     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477648241     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:51 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:51 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000403066    0.006726071   -0.000000000
+      2        1          -0.000313891    0.000507170   -0.000000000
+      3        7           0.000716957   -0.007233239   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.007233239 RMS     0.003309784
+ Leave Link  716 at Thu Jan  9 21:23:51 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=2 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:51 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877477338 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:51 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477654503760     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654504     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:52 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:52 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000019350   -0.000041279   -0.000000028
+      2        1           0.000108594   -0.000063675   -0.000000015
+      3        7          -0.000127944    0.000104954    0.000000043
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000127944 RMS     0.000070954
+ Leave Link  716 at Thu Jan  9 21:23:52 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   1 IXYZ=3 step-up   number 1
+ Skip step-back as it is equivalent to step-up.
+ Finish atom      1 at Thu Jan  9 21:23:52 2025
+ Leave Link  106 at Thu Jan  9 21:23:52 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7909699316 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:52 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477653483854     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477653484     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:54 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:54 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000406428    0.000377906   -0.000000000
+      2        1          -0.001208919    0.000129570   -0.000000000
+      3        7           0.000802487   -0.000507477   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.001208919 RMS     0.000546482
+ Leave Link  716 at Thu Jan  9 21:23:54 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=1 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:54 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7845439562 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:54 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477653021710     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477653022     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:55 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:55 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000375342   -0.000457370   -0.000000000
+      2        1           0.001432814   -0.000252343   -0.000000000
+      3        7          -0.001057471    0.000709712   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.001432814 RMS     0.000674013
+ Leave Link  716 at Thu Jan  9 21:23:55 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=1 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:55 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877083001 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:55 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477654424080     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654424     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:57 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:57 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000137518   -0.000589753   -0.000000000
+      2        1           0.000299261    0.000002103   -0.000000000
+      3        7          -0.000161743    0.000587650   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000589753 RMS     0.000303274
+ Leave Link  716 at Thu Jan  9 21:23:57 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=2 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:23:57 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7878006364 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:57 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477654710928     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654711     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:23:58 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:23:58 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000174961    0.000518503   -0.000000000
+      2        1          -0.000082674   -0.000128331   -0.000000000
+      3        7          -0.000092287   -0.000390171   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000518503 RMS     0.000231783
+ Leave Link  716 at Thu Jan  9 21:23:58 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=2 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:23:58 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877538014 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:23:58 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477654503760     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654504     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:24:00 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:24:00 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000019025   -0.000038675   -0.000000015
+      2        1           0.000108869   -0.000063487   -0.000000086
+      3        7          -0.000127894    0.000102162    0.000000101
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000127894 RMS     0.000070344
+ Leave Link  716 at Thu Jan  9 21:24:00 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   2 IXYZ=3 step-up   number 1
+ Skip step-back as it is equivalent to step-up.
+ Finish atom      2 at Thu Jan  9 21:24:00 2025
+ Leave Link  106 at Thu Jan  9 21:24:00 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7859363446 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:24:00 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477653706959     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477653707     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:24:01 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:24:01 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000363386   -0.000860881   -0.000000000
+      2        1           0.001036726   -0.000096438   -0.000000000
+      3        7          -0.000673342    0.000957321   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.001036726 RMS     0.000608013
+ Leave Link  716 at Thu Jan  9 21:24:01 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=1 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:24:01 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7895624500 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:24:01 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477654264720     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654265     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:24:03 2025, MaxMem=   104857600 cpu:               0.1 elap:               1.4
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:24:03 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000401025    0.000786996   -0.000000000
+      2        1          -0.000823301   -0.000026984   -0.000000000
+      3        7           0.000422277   -0.000760012   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000823301 RMS     0.000496059
+ Leave Link  716 at Thu Jan  9 21:24:03 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=1 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:24:03 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.8045248145 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:24:03 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477647364420     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477647364     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:24:04 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:24:04 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6          -0.000252419    0.007316523   -0.000000000
+      2        1          -0.000508328    0.000448253   -0.000000000
+      3        7           0.000760747   -0.007764770   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.007764770 RMS     0.003573435
+ Leave Link  716 at Thu Jan  9 21:24:04 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=2 step-up   number 1
+ Leave Link  106 at Thu Jan  9 21:24:04 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7710116773 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:24:04 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477647013828     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477647014     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:24:06 2025, MaxMem=   104857600 cpu:               0.0 elap:               1.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:24:06 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000248691   -0.007196539   -0.000000000
+      2        1           0.000709292   -0.000530610   -0.000000000
+      3        7          -0.000957987    0.007727142   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.007727142 RMS     0.003547505
+ Leave Link  716 at Thu Jan  9 21:24:06 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=2 step-down number 1
+ Leave Link  106 at Thu Jan  9 21:24:06 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    11 basis functions,    33 primitive gaussians,    11 cartesian basis functions
+     7 alpha electrons        7 beta electrons
+       nuclear repulsion energy        23.7877475705 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    3 NActive=    3 NUniq=    3 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Thu Jan  9 21:24:06 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../../src/reaxff_chon2017.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-1276566.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1276566.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1276566.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1276566.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1276566.EUF"
+ Recovered energy=-0.477654503760     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=   -0.477654504     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Thu Jan  9 21:24:06 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.6
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Thu Jan  9 21:24:06 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000019202   -0.000041765    0.000000044
+      2        1           0.000108807   -0.000063627    0.000000101
+      3        7          -0.000128009    0.000105392   -0.000000145
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000128009 RMS     0.000071098
+ Leave Link  716 at Thu Jan  9 21:24:06 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l106.exe)
+ NDeriv=      9 NFrqRd=  0 NDerD0=      0 MskFDP=       0 MskDFD=       0 MskDF0=       0
+ Re-enter D2Numr:  atom   3 IXYZ=3 step-up   number 1
+ Skip step-back as it is equivalent to step-up.
+ Finish atom      3 at Thu Jan  9 21:24:06 2025
+ Maximum difference in off-diagonal FC elements:
+ I=  8 J=  2 Difference=    4.3286659552D-04
+ Max difference between analytic and numerical forces:
+ I=  7 Difference=    2.0051085665D-05
+ FinFTb:  IFil= 1 IFilD=  777 LTop=  1 LFil=         4 LTop1=  0 IMask=  1
+ Leave Link  106 at Thu Jan  9 21:24:06 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ Full mass-weighted force constant matrix:
+ Low frequencies ----1404.2040   -1.7808   -0.0399    1.6193    7.2340   16.8912
+ Low frequencies ---   36.3195 3753.7071 4626.4485
+ ******    1 imaginary frequencies (negative Signs) ****** 
+ Diagonal vibrational polarizability:
+        0.0000000       0.0000000       0.0000000
+ Harmonic frequencies (cm**-1), IR intensities (KM/Mole), Raman scattering
+ activities (A**4/AMU), depolarization ratios for plane and unpolarized
+ incident light, reduced masses (AMU), force constants (mDyne/A),
+ and normal coordinates:
+                      1                      2                      3
+                     A'                     A'                     A'
+ Frequencies --  -1404.2039              3753.7071              4626.4485
+ Red. masses --      1.2314                 3.0614                 1.3784
+ Frc consts  --      1.4306                25.4150                17.3830
+ IR Inten    --      0.0000                 0.0000                 0.0000
+  Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
+     1   6    -0.09  -0.08   0.00    -0.04   0.31   0.00    -0.02  -0.12   0.00
+     2   1     0.13   0.98  -0.00     0.90   0.12  -0.00     0.97  -0.19  -0.00
+     3   7     0.07  -0.01  -0.00    -0.03  -0.27   0.00    -0.05   0.12   0.00
+
+ -------------------
+ - Thermochemistry -
+ -------------------
+ Temperature   298.150 Kelvin.  Pressure   1.00000 Atm.
+ Atom     1 has atomic number  6 and mass  12.00000
+ Atom     2 has atomic number  1 and mass   1.00783
+ Atom     3 has atomic number  7 and mass  14.00307
+ Molecular mass:    27.01090 amu.
+ Principal axes and moments of inertia in atomic units:
+                           1         2         3
+     Eigenvalues --     5.54576  32.06762  37.61338
+           X            0.00202   1.00000   0.00000
+           Y            1.00000  -0.00202   0.00000
+           Z           -0.00000  -0.00000   1.00000
+ This molecule is an asymmetric top.
+ Rotational symmetry number  1.
+ Rotational temperatures (Kelvin)     15.61805     2.70098     2.30274
+ Rotational constants (GHZ):         325.42737    56.27924    47.98137
+    1 imaginary frequencies ignored.
+ Zero-point vibrational energy      50124.5 (Joules/Mol)
+                                   11.98003 (Kcal/Mol)
+ Vibrational temperatures:   5400.75  6656.43
+          (Kelvin)
+ 
+ Zero-point correction=                           0.019091 (Hartree/Particle)
+ Thermal correction to Energy=                    0.021924
+ Thermal correction to Enthalpy=                  0.022868
+ Thermal correction to Gibbs Free Energy=        -0.002015
+ Sum of electronic and zero-point Energies=             -0.458563
+ Sum of electronic and thermal Energies=                -0.455731
+ Sum of electronic and thermal Enthalpies=              -0.454786
+ Sum of electronic and thermal Free Energies=           -0.479670
+ 
+                     E (Thermal)             CV                S
+                      KCal/Mol        Cal/Mol-Kelvin    Cal/Mol-Kelvin
+ Total                   13.757              5.962             52.371
+ Electronic               0.000              0.000              0.000
+ Translational            0.889              2.981             35.816
+ Rotational               0.889              2.981             16.555
+ Vibrational             11.980              0.000              0.000
+                       Q            Log10(Q)             Ln(Q)
+ Total Bot       0.845019D+01          0.926867          2.134189
+ Total V=0       0.510850D+10          9.708293         22.354171
+ Vib (Bot)       0.165415D-08         -8.781426        -20.219981
+ Vib (V=0)       0.100000D+01          0.000000          0.000000
+ Electronic      0.100000D+01          0.000000          0.000000
+ Translational   0.551776D+07          6.741762         15.523482
+ Rotational      0.925828D+03          2.966531          6.830689
+ 
+                                                         Title Card Required
+                                                             IR Spectrum
+ 
+     4                       3                                                                                                       
+     6                       7                                                                                                       
+     2                       5                                                                                                       
+     6                       4                                                                                                       
+ 
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+ 
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        6           0.000039598   -0.000016812   -0.000000426
+      2        1           0.000069844   -0.000104283   -0.000002645
+      3        7          -0.000109442    0.000121095    0.000003072
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000121095 RMS     0.000070128
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.355919D+01
+      2  0.128737D-03 -0.840512D-02
+      3  0.230778D-05 -0.213570D-03  0.946228D-05
+      4  0.299828D+00  0.113318D+00  0.287419D-02 -0.196414D-01
+      5 -0.190296D+00 -0.213237D+00 -0.540882D-02 -0.144513D+00  0.683663D+00
+      6 -0.482686D-02 -0.540890D-02 -0.129168D-03 -0.366551D-02  0.173397D-01
+      7 -0.385931D+01 -0.113409D+00 -0.287553D-02 -0.280249D+00  0.334832D+00
+      8  0.190154D+00  0.221649D+00  0.562259D-02  0.311949D-01 -0.470440D+00
+      9  0.482422D-02  0.562267D-02  0.119551D-03  0.791322D-03 -0.119313D-01
+                6             7             8             9 
+      6  0.485353D-03
+      7  0.849295D-02  0.413991D+01
+      8 -0.119312D-01 -0.221411D+00  0.248798D+00
+      9 -0.356150D-03 -0.561713D-02  0.630879D-02  0.236721D-03
+ Leave Link  716 at Thu Jan  9 21:24:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l103.exe)
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Search for a local minimum.
+ Step number   1 out of a maximum of    2
+ All quantities printed in internal units (Hartrees-Bohrs-Radians)
+ Second derivative matrix not updated -- analytic derivatives used.
+ The second derivative matrix:
+                          X1        Y1        Z1        X2        Y2
+           X1           3.55919
+           Y1           0.00013  -0.00841
+           Z1           0.00000  -0.00021   0.00001
+           X2           0.29983   0.11332   0.00287  -0.01964
+           Y2          -0.19030  -0.21324  -0.00541  -0.14451   0.68366
+           Z2          -0.00483  -0.00541  -0.00013  -0.00367   0.01734
+           X3          -3.85931  -0.11341  -0.00288  -0.28025   0.33483
+           Y3           0.19015   0.22165   0.00562   0.03119  -0.47044
+           Z3           0.00482   0.00562   0.00012   0.00079  -0.01193
+                          Z2        X3        Y3        Z3
+           Z2           0.00049
+           X3           0.00849   4.13991
+           Y3          -0.01193  -0.22141   0.24880
+           Z3          -0.00036  -0.00562   0.00631   0.00024
+ ITU=  0
+     Eigenvalues ---   -0.18982   0.93165   7.73639
+ Eigenvalue     1 is  -1.90D-01 should be greater than     0.000000 Eigenvector:
+                          X2        Y1        Y3        Y2        X1
+   1                    0.81051  -0.40098   0.29370   0.20513  -0.19447
+                          X3        Z1        Z3        Z2
+   1                   -0.12630  -0.01017   0.00745   0.00520
+ Angle between quadratic step and forces=  53.64 degrees.
+ ClnCor:  largest displacement from symmetrization is 1.63D-19 for atom     2.
+ Linear search not attempted -- first point.
+ ClnCor:  largest displacement from symmetrization is 8.89D-16 for atom     2.
+ B after Tr=    -0.000019    0.000079    0.000002
+         Rot=    1.000000   -0.000000    0.000001   -0.000030 Ang=   0.00 deg.
+ Variable       Old X    -DE/DX   Delta X   Delta X   Delta X     New X
+                                 (Linear)    (Quad)   (Total)
+    X1       -2.20593   0.00004   0.00000  -0.00009  -0.00011  -2.20604
+    Y1        0.11976  -0.00002   0.00000  -0.00016  -0.00021   0.11954
+    Z1        0.00453  -0.00000   0.00000  -0.00000  -0.00001   0.00452
+    X2       -1.12999   0.00007   0.00000   0.00038   0.00021  -1.12977
+    Y2        2.57932  -0.00010   0.00000  -0.00005  -0.00003   2.57928
+    Z2        0.06691  -0.00000   0.00000  -0.00000  -0.00000   0.06691
+    X3        0.01761  -0.00011   0.00000  -0.00006  -0.00010   0.01751
+    Y3        0.25433   0.00012   0.00000   0.00017   0.00025   0.25458
+    Z3        0.00794   0.00000   0.00000   0.00000   0.00001   0.00794
+         Item               Value     Threshold  Converged?
+ Maximum Force            0.000121     0.000450     YES
+ RMS     Force            0.000070     0.000300     YES
+ Maximum Displacement     0.000245     0.001800     YES
+ RMS     Displacement     0.000139     0.001200     YES
+ Predicted change in Energy=-6.579511D-08
+ Optimization completed.
+    -- Stationary point found.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Leave Link  103 at Thu Jan  9 21:24:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l9999.exe)
+ 1\1\GINC-DESKTOP-1D9QDE1\Freq\RExternal='python3 -u ../../src/reaxff_c
+ hon2017.py'\ZDO\C1H1N1\JH-LI\09-Jan-2025\0\\#p external="python3 -u ..
+ /../src/reaxff_chon2017.py" freq=num geom=allcheck\\Title Card Require
+ d\\0,1\C,-1.167328,0.063372,0.002395\H,-0.597963,1.364915,0.035408\N,0
+ .009318,0.134586,0.004201\\Version=ES64L-G16RevA.03\HF=-0.4776545\RMSD
+ =0.000e+00\RMSF=7.013e-05\ZeroPoint=0.0190914\Thermal=0.021924\Dipole=
+ 0.,0.,0.\DipoleDeriv=0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.\PG=CS [SG(C1H1N1)]\NImag=1\\3.55918585
+ ,0.00012874,-0.00840512,0.00000231,-0.00021357,0.00000946,0.29982781,0
+ .11331816,0.00287419,-0.01964141,-0.19029566,-0.21323667,-0.00540882,-
+ 0.14451287,0.68366270,-0.00482686,-0.00540890,-0.00012917,-0.00366551,
+ 0.01733973,0.00048535,-3.85930937,-0.11340866,-0.00287553,-0.28024872,
+ 0.33483158,0.00849295,4.13991328,0.19015386,0.22164940,0.00562259,0.03
+ 119487,-0.47043951,-0.01193117,-0.22141121,0.24879837,0.00482422,0.005
+ 62267,0.00011955,0.00079132,-0.01193126,-0.00035615,-0.00561713,0.0063
+ 0879,0.00023672\\-0.00003960,0.00001681,0.00000043,-0.00006984,0.00010
+ 428,0.00000265,0.00010944,-0.00012109,-0.00000307\\\@
+
+
+ MARY HAD A LITTLE LAMB
+      HIS FEET WERE BLACK AS SOOT,
+           AND EVERYWHERE THAT MARY WENT
+                HIS SOOTY FOOT HE PUT.
+
+                    -- NONAME
+ Job cpu time:       0 days  0 hours  0 minutes  3.4 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes 23.4 seconds.
+ File lengths (MBytes):  RWF=     43 Int=      0 D2E=      0 Chk=     38 Scr=      1
+ Normal termination of Gaussian 16 at Thu Jan  9 21:24:07 2025.
